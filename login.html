@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<!--login.php , 16 Sep 2022 10:32:41 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <title>WeWealth - Login</title>
+  <meta name="title" content="Login">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/favicon.png" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/css/googleopen.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/all.min.css" type="text/css">
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="assets/css/argon.css" type="text/css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+
+  
+  <script>
+    
+    
+    
+
+    
+  </script>
+</head>
+
+<body class="bg-default">
+<!-- Navbar -->
+<link rel="stylesheet" href="assets/css/fetch.css" />
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/axios.min.js"></script>
+<nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logowhite.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse navbar-custom-collapse collapse" id="navbar-collapse">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="register.html">
+                <img src="assets/img/green.png"><small class="ml-2 text-success font-weight-bold">WeWealth</small>
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <span class="nav-link-inner--text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <span class="nav-link-inner--text">About Us</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <span class="nav-link-inner--text">Login</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- Main content -->
+  <div class="main-content">
+    <!-- Header -->
+    <div class="header bg-gradient-success py-7 py-lg-8 pt-lg-9">
+      <div class="container">
+        <div class="header-body text-center mb-7">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+              <h1 class="text-white">Welcome Back!</h1>
+              <p class="text-lead text-white font-weight-normal">Get back to earning! 🤑</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container mt--8 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="card bg-secondary border-0 mb-0">
+            <div class="card-header bg-transparent pb-2">
+                <div class="btn-wrapper text-center  mt-2 mb-3">
+                <a href="login.html" class="btn btn-neutral btn-icon">
+                  <span class="btn-inner--icon"><img src="assets/img/green.png"></span>
+                  <span class="btn-inner--text text-success">WeWealth</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body px-lg-5 py-lg-5">
+              <form method="POST" action="https://qu-task.top/login.php" id="login-form">
+                <input type="hidden" name="_token" value="3CfTIYDCiDZvpE8M8wePHR52c6tPpdleYeB3J2lP">                                <div class="form-group mb-3">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    </div>
+                    <input class="form-control" type="text" name="email" id="email"  style="padding-left:10px;" value=""
+                                       placeholder="Email"
+                                       class="form-control  input-lg "
+                                       required
+                                       autocomplete="email" autofocus>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" type="password" name="password" style="padding-left:10px;" id="password" placeholder="Password"
+                                       class="form-control input-lg "
+                                       required autocomplete="current-password">
+                  </div>
+                </div>
+                <div class="custom-control custom-control-alternative custom-checkbox">
+                  <input class="custom-control-input" id=" customCheckLogin" type="checkbox" >
+                  <label class="custom-control-label" for=" customCheckLogin">
+                    <span class="text-muted">Remember me</span>
+                  </label>
+                </div>
+                <div class="text-center">
+                  <button type="button" onclick="submitForm()" class="btn btn-success btn-block my-4">Sign in</button>
+                </div>
+              </form>
+              <div class="row mt-3">
+                <div class="col-6">
+                                <!--      <a href="https://XXXXXDXXXXX/password/reset" class="text-muted"><small><b><i class="fas fa-lock"></i> Forgot Password?</b></small></a>-->
+                                  </div>
+                <div class="col-6 text-right">
+                  <a href="register.html" class="text-muted"><small><b><i class="fas fa-user-circle"></i> Create New Account</b></small></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <a href="register.html" class="text-light font-weight-bold">New To www.googles.com? Create new account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="py-5" id="footer-main">
+    <div class="container">
+      <div class="row align-items-center justify-content-xl-between">
+        <div class="col-xl-6">
+          <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2021 <a href="index.html" class="font-weight-bold ml-1" target="_blank">WeWealth</a>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="fraud-policy.html" class="nav-link" target="_blank">Fraud Policy</a>
+            </li>
+            <li class="nav-item">
+              <a href="privacy-policy.html" class="nav-link" target="_blank">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script>
+    if($('#sharedirect').length >0){
+        $('#sharedirect').on('click', function() {
+        const shareData = {
+          title: 'Now Earn $500 Daily With Social Media',
+          text: 'Hi all, Im inviting you to join www.googles.com, a site that lets you earn money using social media. Join right now and get $40 as a sign up bonus!',
+          url: 'https://WeWealth',
+        }
+
+        navigator.share(shareData);
+        });
+    }
+</script>
+<script src="assets/js/fetch.js"></script>  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/js.cookie.js"></script>
+  <script src="assets/js/jquery.scrollbar.min.js"></script>
+  <script src="assets/js/jquery-scrollLock.min.js"></script>
+  <script src="assets/js/sweetalert2.min.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js"></script>
+  <script>
+      function submitForm() {
+          let email = $("#email").val()
+          let password = $("#password").val()
+          let emailReg = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+          if (!emailReg.test(email)) {
+            Swal.fire({
+                    icon: 'error',
+                    text: 'Please enter the correct Email!',
+                  });
+          } else if (!password) {
+            Swal.fire({
+                    icon: 'error',
+                    text: 'Please input a password!',
+                  });
+          } else if (password.length < 6) {
+            Swal.fire({
+                    icon: 'error',
+                    text: 'Password must be at least 6 characters!',
+                  });
+          }else{
+            $.post("api2e6d.json?act=login",{email:email,password:password},function(result){
+              if(result.code==1){
+                window.location.href="login.html"
+              }else{
+                Swal.fire({
+                    icon: 'error',
+                    text: result.message,
+                  });
+              }
+              
+            });
+          }
+      }
+  </script>
+</body>
+
+
+<!--login.php , 16 Sep 2022 10:32:42 GMT -->
+</html>
